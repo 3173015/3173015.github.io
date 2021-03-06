@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#7290CA;
+	height: 500vh;
+	dispaly: grid;
+	place-items: center;
+    margin: 0}
+.container{
+	dispaly:flex;
+	justify-content:center;
+	position:relative:
+}
+.head{
+	width: 300px;
+	height: 300px;
+	border: solid black;
+	background: yellow;
+	position: relative;
+	justify-content: center;
+	border-radius: 80%;
+	display: flex;
+	align-items: baseline;
+	
+}
+.head::before{
+	content: "";
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border-radius: 80%;
+	box-shadow: inset -22px 5px 10px 13px rgba(0,0,0,.2);
+	
+}
+.head::after{
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 30px;
+	background: white;
+	margin-top: 300px;
+	border: solid black;
+}
+.eyeleft, .eyeright{
+	background: #2D0FA7;
+	border-radius: 20%;
+	width: 175px;
+	height: 175px;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.eyeleft{
+	margin-left: -100px;
+	
+}
+.eyeright{
+	margin-left: 100px;
+}
+
+
+.top{
+	width: 250px;
+	height: 100px;
+	background: green;
+	border-top-left-radius: 75%;
+ 	border-top-right-radius: 75%;
+	border-bottom-left-radius: 40%;
+	border-bottom-right-radius: 40%;
+	position: relative;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	
+}
+.top::before{
+	content: "";
+	width: 250px;
+	height: 100px;
+	background: green;
+	border-top-left-radius: 75%;
+ 	border-top-right-radius: 75%;
+	border-bottom-left-radius: 40%;
+	border-bottom-right-radius: 40%;
+	position: absolute;
+	box-shadow: inset -22px 5px 15px 13px rgba(0,0,0,.2);
+
+
+}
+
+.top::after{
+	content:"";
+	width: 80px;
+	height: 120px;
+	background: white;
+	border-top-left-radius: 25%;
+ 	border-top-right-radius: 65%;
+	border-bottom-left-radius: 80%;
+	border-bottom-right-radius: 70%;
+	box-shadow: inset -8px 15px 15px 3px rgba(0,0,0,.2);
+	position: static;
+	margin-top: 90px;
+
+
+}

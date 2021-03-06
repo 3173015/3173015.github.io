@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index2.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="p4">
+			<img src="../../假鸡油菌做法.jpg" class="p4img">
+			<a>DEAD</a>
+			<div class="ddd">
+				<span  onclick="toPage3()">Back</span>
+				<span onclick="showImg()">Cook</span>
+			</div>
+			
+		</div>
+		<div class="p5">
+			<img src="../../假鸡油菌.jpg" width="200px" >
+			<h2>Cantharelluss</h2>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>
+				Cantharellus is a genus of popular edible mushrooms, commonly known as chanterelles/ˌʃæntəˈrɛl/, a name which can also refer to the type species, Cantharellus cibarius. They are mycorrhizal fungi, meaning they form symbiotic associations with plants, making them very difficult to cultivate. Caution must be used when identifying chanterelles for consumption due to lookalikes, such as the Jack-O-Lantern species (Omphalotus olearius and others), which can make a person very ill. Despite this, chanterelles are one of the most recognized and harvested groups of edible mushrooms.
+			</p>
+			<br>
+			<span  onclick="window.location.href='index2.html'"><h2>Back</h2></span>
+		</div>
+		<div class="p3">
+			<div class="ccc">
+				<div onclick="toPage5()">
+					<img src="img/444.png" >
+					<p>Not Eat</p>
+				</div>
+				<div onclick="toPage4()">
+					<img src="img/tenor.gif" >
+					<p>Eat</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="p2">
+			<img src="img/b67c9f01a18b87d691e5a27f000828381e30fd8f.gif" >
+			<p class="next">
+				Press Enter
+			</p>
+		</div>
+		<div class="cont">
+			<div class="title">
+				<h1>Mushroom Forest</h1>
+				<h2>click the mushroom on the ground</h2>
+			</div>
+			<div class="mogu">
+				<img src="img/1.png" class="a1" onclick="toPage()">
+				<img src="img/2.png" class="a2" onclick="show(2)" >
+				<img src="img/3.png" class="a3" onclick="show(1)" >
+				<img src="img/4.png" class="a4" onclick="show(4)" >
+				<img src="img/5.png" class="a5" onclick="show(5)" >
+				<img src="img/6.png" class="a6" onclick="show(6)" >
+				<img src="img/7.png" class="a7" onclick="show(7)" >
+				<img src="img/8.png" class="a8" onclick="show(3)" >
+				<img src="img/9.png" class="a9" onclick="show(8)" >
+				
+				<img src="img/13.gif" class="c1 none"  >
+				<img src="img/12.gif" class="c2 none" >
+				<img src="img/15.gif" class="c3 none" >
+				<img src="img/14.gif" class="c4 none" >
+				<img src="img/16.gif" class="c5 none" >
+				<img src="img/17.gif" class="c6 none" >
+				<img src="img/18.gif" class="c7 none" >
+				<img src="img/19.gif" class="c8 none" >
+				
+			</div>
+			<video src="img/background.mp4" loop="loop" autoplay="autoplay" muted="muted"></video>
+		</div>
+		<script>
+			
+			var p=1
+			toPage()
+			function show(n){
+				
+					// var c1=document.getElementsByClassName('c'+n)[0]
+					// c1.classList.remove('none')
+					// setTimeout(function(){
+					// 	c1.classList.add('none')
+					// },3000)
+				
+			}
+			
+
+				
+			function toPage(){
+				p=2
+				document.getElementsByClassName('cont')[0].classList.add('tohide')
+				document.getElementsByClassName('p2')[0].classList.add('toshow')
+			}
+			function toPage4(){
+				p=4
+				document.getElementsByClassName('p2')[0].classList.remove('toshow')
+				document.getElementsByClassName('p4')[0].classList.add('toshow')
+			}
+			function toPage5(){
+				p=5
+				document.getElementsByClassName('p2')[0].classList.remove('toshow')
+				document.getElementsByClassName('p4')[0].classList.remove('toshow')
+				document.getElementsByClassName('p5')[0].classList.add('toshow')
+			}
+			 function toPage3(){
+				 document.getElementsByClassName('p5')[0].classList.remove('toshow')
+				 document.getElementsByClassName('p4img')[0].classList.remove('toshow')
+				 document.getElementsByClassName('p4')[0].classList.remove('toshow')
+				 document.getElementsByClassName('p2')[0].classList.remove('toshow')
+				 document.getElementsByClassName('p3')[0].classList.add('toshow')
+				 p=3
+			 }
+			 function showImg(){
+				 document.getElementsByClassName('p4img')[0].classList.add('toshow')
+			 }
+			 document.onkeydown=function(ev){
+			                var event=ev ||event
+			                if(event.keyCode==13&&p==2){
+			                    toPage3()
+			                }
+			            }
+						
+		</script>
+	</body>
+</html>
